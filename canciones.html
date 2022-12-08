@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="canciones.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Canciones</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="app.html" class="servicios">Servicios</a>
+        <button class="log_out">Desconectarse</button>
+    </nav>
+
+
+    <div class="contenedor_canciones">
+
+        <div class="btn_formulario open_formulario">Añadir canción</div>
+
+        <form class="formulario hide" id="formulario">
+
+            <div class="formulario_content">
+                <input class="inp titulo" id="titulo"  type="text" placeholder="Ingresar titulo" required autofocus>
+                <input class="inp Tono" id="tono" type="text" placeholder="Tono y/o Acordes" required>
+                <textarea name="letra" id="letra" class="inp letra" cols="30" rows="10" placeholder="Escribe la letra aquí..." required></textarea>
+                <button class="inp btn_enviar" id="btn_enviar">Agregar</button>
+            </div>
+
+        </form>
+
+        <div class="cancion" id="cancion"> </div>
+
+        <div class="canciones" id="canciones"> 
+
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script>
+        // Import the functions you need from the SDKs you need
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBuGdka-tWdVVFYLnPBpXT-yzOrkLVTxQ8",
+          authDomain: "app-alabanza.firebaseapp.com",
+          databaseURL: "https://app-alabanza-default-rtdb.firebaseio.com",
+          projectId: "app-alabanza",
+          storageBucket: "app-alabanza.appspot.com",
+          messagingSenderId: "1042462189767",
+          appId: "1:1042462189767:web:eb984f75dc3d54c2a4f6e2"
+        };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+      <script src="canciones.js"></script>
+</body>
+</html>

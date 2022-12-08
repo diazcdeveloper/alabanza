@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/* CSS GENERAL */
+
+.hide{
+    display: none;
+}
+
+/* CSS NAVBAR */
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar .lista_canciones{
+    text-decoration: none;
+    color: gray;
+    padding: 4px;
+    margin: 10px 10px 10px 0;
+}
+
+.navbar .log_out{
+    display: flex;
+    border: none;
+    font-weight: 600;
+    background-color: #DF4740;
+    color: white;
+    padding: 8px;
+    margin: 10px 5px 10px 0;
+    cursor: pointer;
+}
+
+
+/* CSS HEADER */
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.header h2{
+    font-size: 26px;
+}
+
+.header p{
+    margin-top: -12px;
+    letter-spacing: 7px;
+    font-size: 10px;
+}
+
+
+/* CSS IMG */
+
+.imagen{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen img{
+    width: 320px;
+}
+
+
+
+.contenedor_desplegar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_desplegar{
+    display: flex;
+    justify-content: flex-end;
+    width: 280px;
+}
+
+.form_desplegar p{
+    padding-top: 15px;
+    padding-right: 30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.form_desplegar .btntoggle{
+    font-size: 40px;
+}
+
+
+
+/* CSS FORMULARIO */
+
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario.hide{
+    display: none;
+}
+
+.formulario .inp{
+    width: 280px;
+    margin-top: 20px;
+    outline: none;
+}
+
+.formulario .btn_enviar{
+    width: 280px;
+    background-color: #78CBF2;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+
+/* CSS TARJETA SERVICIOS */
+
+.tarjeta{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tarjeta .servicio{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #E8E8E8;
+}
+
+.tarjeta .servicio .dia{
+    color: gray;
+}
+
+.tarjeta .servicio .canciones{
+    margin-top: 10px;
+}
+
+.tarjeta .servicio .btn_servicio{
+    display: flex;
+}
+
+.tarjeta .servicio .btn{
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.tarjeta .servicio .btn_borrar{
+    background-color: #DF4740;
+    border: none;
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+.tarjeta .servicio .btn_editar{
+    background-color: #E8E8E8;
+    border: none;
+    color: gray;
+    cursor: pointer;
+}
+
+
+
+
+
+.contenedor_seguroborrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contenedor_seguroborrar .btn_seguroborrar{
+    padding: 10px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+}

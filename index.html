@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>login page</title>
+</head>
+<body>
+
+
+    <div class="form_login_contenedor">
+
+        <header class="header">
+            <h2>MINISTERIO DE ALABANZA</h2>
+            <p>casa firme iglesia cristiana</p>
+        </header>
+        
+        <form class="form_login">
+            <input class="email" type="text" placeholder="Ingresar email" required>
+            <input class="password" type="password" placeholder="Ingresar Contraseña" required>
+            <button type="submit" class="log_in">Ingresar</button>
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script>
+        // Import the functions you need from the SDKs you need
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBuGdka-tWdVVFYLnPBpXT-yzOrkLVTxQ8",
+          authDomain: "app-alabanza.firebaseapp.com",
+          databaseURL: "https://app-alabanza-default-rtdb.firebaseio.com",
+          projectId: "app-alabanza",
+          storageBucket: "app-alabanza.appspot.com",
+          messagingSenderId: "1042462189767",
+          appId: "1:1042462189767:web:eb984f75dc3d54c2a4f6e2"
+        };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+    <script src="app.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

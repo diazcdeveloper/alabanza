@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Alabanza</title>
+</head>
+<body>
+
+    <nav class="navbar" >
+        <a href="canciones.html" class="lista_canciones">Lista de canciones</a>
+        <button class="log_out">Desconectarse</button>
+    </nav>
+
+    <header class="header">
+        <h2>MINISTERIO DE ALABANZA</h2>
+        <p>casa firme iglesia cristiana</p>
+    </header>
+
+    <div class="imagen">
+        <img src="img/ministeriodealabanza.jpg" alt="">
+    </div>
+
+    <div class="contenedor_desplegar">
+        <div class="form_desplegar">
+            <p>Crear nuevo servicio</p>
+            <i class="uil uil-angle-down btntoggle down" id="hide"></i>
+            <i class="uil uil-angle-up btntoggle up hide" id="show"></i>
+        </div>
+    </div>
+
+    
+
+    <form class="formulario hide" id="formulario">
+        <input class="inp director" id="director"  type="text" placeholder="Director" required autofocus>
+        <input class="inp dia" id="dia" type="text" placeholder="Dia" required>
+        <textarea name="canciones" id="canciones" class="inp canciones" cols="30" rows="10" placeholder="las alabanzas son..."></textarea>
+        <button class="inp btn_enviar" id="btn_enviar">Enviar</button>
+    </form>
+
+    <div class="tarjeta" id="servicio-contenedor">
+        
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script>
+        // Import the functions you need from the SDKs you need
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBuGdka-tWdVVFYLnPBpXT-yzOrkLVTxQ8",
+          authDomain: "app-alabanza.firebaseapp.com",
+          databaseURL: "https://app-alabanza-default-rtdb.firebaseio.com",
+          projectId: "app-alabanza",
+          storageBucket: "app-alabanza.appspot.com",
+          messagingSenderId: "1042462189767",
+          appId: "1:1042462189767:web:eb984f75dc3d54c2a4f6e2"
+        };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+    <script src="app.js"></script>
+    <script src="toggle.js"></script>
+</body>
+</html>
